@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<head>
+  <title>WEB RTC</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+</head>
+
+<body>
+  <p>ONLINE USER</p>
+  <ul id="ulUser"></ul>
+  <label id="peer-id"> PEER ID : </label>
+  <div>
+    <video id="localStream" width="300" height="300" controls muted></video>
+    <video id="remoteStream" width="300" height="300" controls></video>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <input type="text" id="another-id">
+    <button id="connect">Connect</button>
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <input type="text" id="user-name">
+    <button id="login">Login</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
