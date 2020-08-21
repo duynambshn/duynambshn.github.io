@@ -1,1 +1,7 @@
 node_module
+backup
+config
+model
+test
+view
+.env
